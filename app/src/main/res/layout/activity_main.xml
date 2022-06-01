@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <!--    Logo BMI Calculator-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:src="@drawable/bmi_logo2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="serif"
+            android:letterSpacing="0.04"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!--    Please fill your information below-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:letterSpacing="0.03"
+        android:text="@string/fill_inputs"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <!--    Weight-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/weight"/>
+<!--            app:tint="@color/colorWhite" />-->
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.1"
+                android:text="@string/fill_weight"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/hint_weight"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    Line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray" />
+
+    <!--    Height-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/height" />
+        <!--        app:tint="@color/colorWhite"-->
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.1"
+                android:text="@string/fill_height"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/heightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/hint_height"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    Line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray" />
+
+    <!--    Button-->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorPurple"
+        android:fontFamily="serif"
+        android:letterSpacing="0.2"
+        android:padding="14dp"
+        android:text="@string/button_calculate"
+        android:textSize="16sp" />
+
+</LinearLayout>

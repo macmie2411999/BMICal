@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+
+    <!--    activity_main.xml-->
+    <string name="fill_inputs">Please fill your information below</string>
+    <string name="fill_weight">Enter your weight (Kilogram)</string>
+    <string name="hint_weight">5 – 300</string>
+    <string name="fill_height">Enter your height (Centimeter)</string>
+    <string name="hint_height">50 – 300</string>
+    <string name="button_calculate">CALCULATE BMI</string>
+
+    <!--    activity_result.xml-->
+    <string name="show_bmi">Your BMI Is: </string>
+    <string name="default_bmi">26.5</string>
+    <string name="evaluate_bmi_healthy">You Have A Normal Weight!</string>
+    <string name="give_advice_healthy">Here Are Some Advices To Keep Fit</string>
+    <string name="first_advice_healthy">Stay Active</string>
+    <string name="second_advice_healthy">Eat More Salads</string>
+    <string name="third_advice_healthy">Sleep Tight</string>
+
+    <string name="todo">TODO</string>
+
+</resources>
